@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        body = document.body;
+        a = ["nandiswar", "nani", "nandu", "hi"];
+
+        select = document.createElement("select");
+
+        for (i = 0; i < a.length; i++) {
+            op = document.createElement("option");
+            op.innerText = a[i];
+            select.appendChild(op);
+        }
+
+        body.appendChild(select);
+
+        console.log(body);
+
+        select.addEventListener('change', function() {
+            const selectedOption = select.options[select.selectedIndex].text;
+            
+            if (selectedOption.length % 2 === 0) {
+                console.log("res is 0");
+            } else {
+                console.log("res is 1");
+            }
+        });
+    </script>
+</body>
+</html>

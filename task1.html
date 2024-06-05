@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<form action="" class="hi">
+    <label for="names">list of names : </label>
+    <select name="names" id="names">
+        <option  class="nandi"  value="nandi">nandi</option>
+        <option  class="nandi" value="nandiswar">nandiswar</option>
+        <option  class="nandi"  value="nandish">nandish</option>
+        <option  class="nandi" value="eswar">eswarr</option>
+        <option  class="nandi" value="hi">hi</option>
+        <br><br>
+
+    </select>
+    
+</form>
+
+
+<script>
+
+
+
+    b = document.getElementsByClassName("nandi") 
+
+    
+    for(i=0;i<b.length;i++)
+    {
+       if(b[i].innerText.length %2 == 0)
+       {
+        console.log("res is 0")
+       }
+       else
+       {
+        console.log("res is 1")
+       }
+    } 
+
+
+
+
+</script>
+
+</body>
+</html>
